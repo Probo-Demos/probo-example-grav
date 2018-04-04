@@ -1,12 +1,13 @@
 image: proboci/ubuntu-16.04-lamp:php7.2-nightly
 steps:
-  - name: Update composer
+  - name: Update composer.
     command: '/usr/local/bin/composer self-update'
-  - name: Probo site setup
+  - name: Probo Grav site setup.
     plugin: LAMPApp
-  - name: Set permissions
+  - name: Creating required directories and setting permissions.
     plugin: Script
     script:
+      - mkdir /src/logs /src/images /src/assets /src/user/data
       - chown -R www-data:www-data .
       - find ./bin -type f | xargs chmod 775
       - find . -type d | xargs chmod 775
