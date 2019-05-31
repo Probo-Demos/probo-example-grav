@@ -12,3 +12,4 @@ steps:
       - find ./bin -type f | xargs chmod 775
       - find . -type d | xargs chmod 775
       - find . -type d | xargs chmod +s
+      - echo "testing 123"
