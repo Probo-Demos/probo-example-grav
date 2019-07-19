@@ -8,7 +8,7 @@ steps:
       composer create-project getgrav/grav /tmp/src --no-interaction
       cp -Rf /tmp/src/* /src
       cp /src/webserver-configs/htaccess.txt /src/.htaccess
-  - name: Creating required directories and setting permissions.
+  - name: Creating required Grav directories and setting permissions.
     plugin: Script
     script: |
       mkdir /src/logs /src/images /src/assets /src/user/data
