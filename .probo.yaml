@@ -1,6 +1,6 @@
 image: proboci/ubuntu-16.04-lamp:php-7.2
 steps:
-  - name: Probo Grav site initialization.
+  - name: Probo Grav site initialization....
     plugin: LAMPApp
   - name: Download Grav latest release.
     plugin: Script
